@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "cp3",
+    "slug": "cp3",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo-app.png",
+    "scheme": "cp3",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo-app.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": ["CAMERA"],
+      "package": "com.tcguus.cp3"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo-app.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f59c04dc-4c9d-4a0f-96fb-a1661e673ec7"
+      }
+    }
+  }
+}
